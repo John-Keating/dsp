@@ -31,11 +31,10 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> Vim:
-	I like the model interface as, after typing in languages with many diacritics, I want to spare my pinkies
-	further strain.
-	I think that the steep learning curve will pay off in the end with lightning fast slicing and dicing of text. 
-	I like the simplicity. I am scared of spending too much time customizing emacs to be 'just right'.
+>>#Vim:
+>>*I like the model interface as, after typing in languages with many diacritics, I want to spare my pinkies further strain.
+>>*I think that the steep learning curve will pay off in the end with lightning fast slicing and dicing of text. 
+>>*I like the simplicity. I am scared of spending too much time customizing emacs to be 'just right'.
 ---
 
 
@@ -64,6 +63,11 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+#vim
+It has a model interface, which, after many years of word processing, feels both strange and sublime.
+Some useful shortcuts include:
+  * q{char} start recording a macro
+  * xp for when I write 'teh'
+I have added *vundle* to handle add ons, *powerline* to give me info on the file I am editing, NERDTree to display my files, and pymode, which everyone says I should get if I want to work in Python, but I haven't quite figured out all of it yet.
+I have alterd the default highlighting, indentation, and line length
 ---
