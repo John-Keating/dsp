@@ -33,6 +33,7 @@ What terminal editor will you use? How did you make your decision?
 
 #Vim:
 *I like the model interface as, after typing in languages with many diacritics, I want to spare my pinkies further strain.
+
 *I think that the steep learning curve will pay off in the end with lightning fast slicing and dicing of text. 
 *I like the simplicity. I am scared of spending too much time customizing emacs to be 'just right'.
 ---
