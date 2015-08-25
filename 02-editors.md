@@ -35,6 +35,7 @@ What terminal editor will you use? How did you make your decision?
 I like the model interface as, after typing in languages with many diacritics, I want to spare my pinkies further strain.
 I think that the steep learning curve will pay off in the end with lightning fast slicing and dicing of text. 
 I love the simplicity and I am scared of spending too much time customizing an emacs to be 'just right'.
+
 ---
 
 
@@ -75,4 +76,5 @@ Some useful shortcuts include:
 
 I have added *vundle* to handle add ons, *powerline* to give me info on the file I am editing, *NERDTree* to display my files, and *pymode*, which everyone says I should get if I want to work in Python. It does a lot :confused: so I haven't quite figured out all of the bundle yet. Still, if it's good enough for some guys on the internet, it should be good enough for me. :stuck_out_tongue_closed_eyes:
 I have altered the default highlighting, indentation, and line length.
+
 ---
