@@ -40,16 +40,10 @@ $>>$ | output left then appends to the file on the right
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
----
-
-
----
-
-What does `xargs` do? Give an example of how to use it.
-
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` lists all the files and folders in a directory
+> > `ls -a' includes hidden files in that folder
+> > `ls -l` will provide a long form list of files and folders in a directory
+> > > The long form list states: permissions, owner, group, file size last modified,  
 
 ---
 
