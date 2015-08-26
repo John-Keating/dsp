@@ -58,5 +58,8 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 `ls -l` will provide a long form list of files and folders in a directory
 > The long form list states: permissions, owner, group, file size last modified,  
 
----
+`ls -lh` will also print a long form list of files, but it will measure the file size not just by byte but by kb, mb, gb, tb, pt to reduce the display size.
 
+The order does not matter for these flags, e.g. `-hl` will return the same as `-lh`. `-la` is a meaningful combination that will return a long form list that that includes hidden files. `-lah` will return a long form list of all files but show the file size in the largest possible unit.
+ 
+---
