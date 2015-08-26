@@ -63,3 +63,28 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 The order does not matter for these flags, e.g. `-hl` will return the same as `-lh`. `-la` is a meaningful combination that will return a long form list that that includes hidden files. `-lah` will return a long form list of all files but show the file size in the largest possible unit.
  
 ---
+
+What does xargs do? Give an example of how to use it.
+
+`xargs` creates a list of arguments that can then be piped into another command. It allows you to pass a list of arguments that would be larger than the limits of a command or contain characters that the command cannot process.
+`xargs` is frequently used with grep and find commands.
+
+`$ find . -name ".txt" -print | xargs grep "computer"`
+
+The example above will search the current directory for txt files with the word computer in them and print them.
+
+'''
+Carolines-MacBook-Pro:temp johnkeating$ find . -name "*.txt" -print
+./bacon.txt
+./ipad.txt
+./macintosh.txt
+./mobile.txt
+./newfile.txt
+./oldfile.txt
+./potato.txt
+Carolines-MacBook-Pro:temp johnkeating$ find . -name "*.txt" -print | xargs grep computer
+./ipad.txt:computer imputer imputeree
+./macintosh.txt:computer computer commuter
+./mobile.txt:computer
+'''
+
