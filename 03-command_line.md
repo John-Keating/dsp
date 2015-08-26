@@ -12,23 +12,29 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-`pushd` + path  - Hurtle down a path
+1. `pushd` + path  - Hurtle down a path
 
-`popd` - back to where you pushed from
+2. `popd` - back to where you pushed from
 
-`cp -r` - copy a directory with firles
+3. `cp -r` - copy a directory with firles
 
-`rm -rf` - recursivly delete files from a directory
+4. `rm -rf` - recursivly delete files from a directory
 
-`find . -name *.txt -print` - finds and prints all text file names in the current directory
+5. `find . -name *.txt -print` - finds and prints all text file names in the current directory
 > save the above filenames to a file: add `add > textfiles.txt`
 
-`cat > newfile.txt` - start typing and text will be saved to the newfile
+6. `cat > newfile.txt` - start typing and text will be saved to the newfile
 > NB: CTRL-d will get you out of typing mode
 
-`man` + command - find the manual entry on that command
+7. `man` + command - find the manual entry on that command
 
-`grep -i` - will search for string within files ignoring case
+8. `grep -i` - will search for string within files ignoring case
+
+9. `less + FILENAME` - page through file
+
+10. `cat + FILENAME` - print whole file
+
+11. `export` - set a new environment variable
 
 pipes and redirection |what happens
 --------------------- | -----------
