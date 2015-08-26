@@ -12,8 +12,27 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `pushd` + path  - Hurtle down a path
+> > `popd` - back to where you pushed from
+> > `cp -r` - copy a directory with firles
+> > `rm -rf` - recursivly delete files from a directory
 
+pipes and redirection |what happens
+--------------------- | -----------
+$|$ | output left to right command
+$<$ | input right to program left
+$>$ | output left to file on right
+$>>$ | output left then appends to the file on the right 
+
+> > `find . -name *.txt -print` - finds and prints all text file names in the current directory
+> > > *bonus!!* save the above filenames to a file: add `add > textfiles.txt`
+
+> > `cat > newfile.txt` - start typing and text will be saved to the newfile
+> > > NB: CTRL-d will get you out of typing mode
+
+> > `man` + command - find the manual entry on that command
+
+> > `grep -i` - will search for string within files ignoring case
 ---
 
 
