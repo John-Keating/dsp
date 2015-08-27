@@ -73,7 +73,7 @@ What does xargs do? Give an example of how to use it.
 
 The example above will search the current directory for txt files with the word computer in them and print them.
 
-'''
+```
 Carolines-MacBook-Pro:temp johnkeating$ find . -name "*.txt" -print
 ./bacon.txt
 ./ipad.txt
@@ -86,5 +86,5 @@ Carolines-MacBook-Pro:temp johnkeating$ find . -name "*.txt" -print | xargs grep
 ./ipad.txt:computer imputer imputeree
 ./macintosh.txt:computer computer commuter
 ./mobile.txt:computer
-'''
+```
 
