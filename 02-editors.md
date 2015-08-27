@@ -74,7 +74,10 @@ Some useful shortcuts include:
   * :g/pattern/d to delete pattern from the file (remove the d at the end to highlight pattern)
   * :r !date will retrieve the date, time, and timezone from my computer
 
-I have added *vundle* to handle add ons, *powerline* to give me info on the file I am editing, *NERDTree* to display my files, and *pymode*, which everyone says I should get if I want to work in Python. It does a lot :confused: so I haven't quite figured out all of the bundle yet. Still, if it's good enough for some guys on the internet, it should be good enough for me. :stuck_out_tongue_closed_eyes:
+I have added *vundle* to handle add ons, *powerline* to give me info on the file I am editing, *NERDTree* to display my files, and *pymode*, which everyone says I should get if I want to work in Python. It does a lot :confused: so I haven't quite figured out all of the bundle yet. Still, if it's good enough for some guys on the internet, it should be good enough for me. :stuck_out_tongue_closed_eyes: 
+Wed Aug 26 22:07:25 EDT 2015
+_Update_ I'm getting the hang of much of it now. Pymode has a good syntax checker. I added *Fugitive* for quick Git actions.
+
 I have altered the default highlighting, indentation, and line length.
 
 ---
