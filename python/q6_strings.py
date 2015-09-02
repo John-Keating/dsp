@@ -73,7 +73,8 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    return s[0] + s[1:len(s)].replace(s[0], *)
+
+    return s[0] + s[1:len(s)].replace(s[0], '*')
     raise NotImplementedError
 
 
@@ -92,6 +93,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+
+    return b[:2] + a[2:] + ' ' + a[:2] + b[2:]
     raise NotImplementedError
 
 
@@ -109,6 +112,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+
+    if len(s) < 3:
+        return s
+    elif s.endswith('ing'):
+        return s + 'ly'
+    else:
+        return s + 'ing'
     raise NotImplementedError
 
 
@@ -129,6 +139,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    s_bad = s.find('bad')
+    if s_not < s_bad and s_not != -1:
+        s.partition('not')
+        return s.replace(s[s.find('not'):s.find('bad')+ 3], 'good')
+    else:
+        return s
     raise NotImplementedError
 
 
