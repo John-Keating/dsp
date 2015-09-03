@@ -49,7 +49,7 @@ def both_ends(s):
     'xyyz'
     """
     if len(s) > 2:
-        s1 =  s[:2]
+        s1 = s[:2]
         s2 = s[len(s)-2:]
         return s1 + s2
     else:
@@ -139,6 +139,7 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    s_not = s.find('not')
     s_bad = s.find('bad')
     if s_not < s_bad and s_not != -1:
         s.partition('not')
@@ -164,4 +165,9 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    a2 = a[len(a)-(len(a)/2):]
+    a1 = a.replace(a2, "")
+    b2 = b[len(b)-(len(b)/2):]
+    b1 = b.replace(b2, "")
+    return a1 + b1 + a2 + b2
     raise NotImplementedError
