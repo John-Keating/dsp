@@ -9,8 +9,9 @@ import pandas as pd  # import pandas library
 
 def read_data(data):
     facultydf = pd.read_csv(data, na_values=[""])
+    facultydf.rename(columns= lambda x: x.strip()inplace= True) #remove wspace
     return facultydf
-# I should add a line above that clears whitespace from the col names
+
 
 #  reads data into data frame, selects information you request
 #  Cleans selection and returns dictrionary histogram of data
