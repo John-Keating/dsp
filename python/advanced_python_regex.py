@@ -9,7 +9,7 @@ import pandas as pd  # import pandas library
 
 def read_data(data):
     facultydf = pd.read_csv(data, na_values=[""])
-    facultydf.rename(columns= lambda x: x.strip()inplace= True) #remove wspace
+    facultydf.rename(columns= lambda x: x.strip(), inplace= True) #remove wspace
     return facultydf
 
 
