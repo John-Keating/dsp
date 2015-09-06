@@ -42,6 +42,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 test_results = [('john doe', 'B', 3.01), ...]
 
 print sorted(test_results, key = lambda test_results: (test_results[1], test_results[2]), resverse=True)
+```
 
 
 ---
@@ -50,7 +51,71 @@ print sorted(test_results, key = lambda test_results: (test_results[1], test_res
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> List comprehension is a concise means for defining the elements of a list by setting the definition within brackets.
+> List comprehensions are considered more readible.
+```
+words = "List comprehension is a concise means for defining the elements of a list by setting the definition within brackets".split
+
+``` python
+info = [[w.lower(), w.upper(), len(w)] for w in words]
+for i in info:
+    print i
+['list', 'LIST', 4]
+['comprehension', 'COMPREHENSION', 13]
+['is', 'IS', 2]
+['a', 'A', 1]
+['concise', 'CONCISE', 7]
+['means', 'MEANS', 5]
+['for', 'FOR', 3]
+['defining', 'DEFINING', 8]
+['the', 'THE', 3]
+['elements', 'ELEMENTS', 8]
+['of', 'OF', 2]
+['a', 'A', 1]
+['list', 'LIST', 4]
+['by', 'BY', 2]
+['setting', 'SETTING', 7]
+['the', 'THE', 3]
+['definition', 'DEFINITION', 10]
+['within', 'WITHIN', 6]
+['brackets', 'BRACKETS', 8]
+```
+
+``` python
+alt_info = map(lambda w: [w.lower(), w.upper(), len(w)], words)
+for t in alt_info:
+    print t
+['list', 'LIST', 4]
+['comprehension', 'COMPREHENSION', 13]
+['is', 'IS', 2]
+['a', 'A', 1]
+['concise', 'CONCISE', 7]
+['means', 'MEANS', 5]
+['for', 'FOR', 3]
+['defining', 'DEFINING', 8]
+['the', 'THE', 3]
+['elements', 'ELEMENTS', 8]
+['of', 'OF', 2]
+['a', 'A', 1]
+['list', 'LIST', 4]
+['by', 'BY', 2]
+['setting', 'SETTING', 7]
+['the', 'THE', 3]
+['definition', 'DEFINITION', 10]
+['within', 'WITHIN', 6]
+['brackets', 'BRACKETS', 8]
+```
+``` python
+info_filter = [w for w in words if w.startswith("c")]
+print info_filter
+['comprehension', 'concise']
+``` 
+```python
+alt_info_filter = filter(lambda w: w.startswith("c"), words)
+print alt_info_filter
+['comprehension', 'concise']
+```
+
 
 ---
 
