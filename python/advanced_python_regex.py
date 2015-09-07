@@ -8,20 +8,20 @@ import pandas as pd  # import pandas library
 
 
 def read_data(data):
-    facultydf = pd.read_csv(data, na_values=[""])
-    facultydf.rename(columns= lambda x: x.strip(), inplace= True) #remove wspace
-    return facultydf
+    df = pd.read_csv(data, na_values=[""])
+    df.rename(columns= lambda x: x.strip(), inplace= True) #remove wspace
+    df.fillna(value="n/a", inplace=True)
+    return df
 
 
 #  reads data into data frame, selects information you request
 #  Cleans selection and returns dictrionary histogram of data
 
-
-def number_freq(data, request):
+def num_degrees(data):
     df = read_data(data)
     req_l = []
     req_d = {}
-    req_raw = df[request]
+    req_raw = df["title"]
     for row in req_raw:
         no_punc = row.replace(".", "")
         req_l.append(no_punc.split())
