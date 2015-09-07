@@ -31,21 +31,21 @@ def num_degrees(data):
     return deg_frame.sort("frequency", ascending=False).reset_index()
 
 
-print num_degrees("faculty.csv")
+print "number of degrees", num_degrees("faculty.csv")
 
 
 def num_titles(data):
     df = read_data(data)
     title_d = {}
+    df["title"].replace(to_replace=" is ", value=" of ", inplace=True)
     titles_raw = df["title"].tolist()
     for item in titles_raw:
-        title = item.partition(" of ")[0]
+        title = item.rsplit(" ", 2)[0]
         title_d[title] = 1 + title_d.get(title, 0)
     title_frame = pd.DataFrame(title_d.items(), columns=["title", "frequency"])
     return title_frame.sort("frequency", ascending=False)
 
-
-print num_titles("faculty.csv)
+print "number of titles", num_titles("faculty.csv")
 
 
 def all_email(data):
@@ -54,7 +54,7 @@ def all_email(data):
     return email_list
 
 
-len(all_email("faculty.csv))
+print("\n".join(all_email("faculty.csv")))
 
 
 def all_domains(data):
@@ -67,4 +67,4 @@ def all_domains(data):
     return uniq_domains
 
 
-print len(all_domains("faculty.csv"))
+print("\n".join(all_domains("faculty.csv")))
