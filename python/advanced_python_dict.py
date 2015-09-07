@@ -1,7 +1,9 @@
 import pandas as pd
 from operator import itemgetter
 
+
 # Question6. Create a dictionary based on family name
+
 
 def faculty_dict(data):
     dframe = pd.read_csv(data)
@@ -11,7 +13,11 @@ def faculty_dict(data):
     faculty_d = {x: group[["degree", "title", "email"]].values.tolist() for x,group in dframe.groupby("lastname")}
     return faculty_d
 
+print faculty_dict("faculty.csv").items()[:3]
+
+
 # Question 7 With full name dictionary
+
 
 def professor_dict(data):
     dframe = pd.read_csv(data)
@@ -23,7 +29,14 @@ def professor_dict(data):
     prof_d = {x: group[["degree", "title", "email"]].values.tolist() for x,group in dframe.groupby("name")}
     return prof_d
 
-# Question 8 sort the dictionary by first name
 
-def sorted_dictionary(d):
-    s_d = sorted(d, key=itemgetter(1,0))
+print professor_dict("faculty.csv").items()[:3]
+
+
+# Question 8 sort the dictionary by last name
+
+x = professor_dict("faculty.csv")
+
+s = sorted(x.items(), key=lambda (k,v): (k[1], k[0]))
+
+print s.items[:3]
