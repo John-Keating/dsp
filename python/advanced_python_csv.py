@@ -10,8 +10,8 @@ def all_email(data):
 
 
 def produce_csv(output, name):
-    output.to_csv(name)
+    pd.Series(output).to_csv(name, index=False)
 
 emails = all_email("faculty.csv")
 
-produce_csv(emails, "email.csv"
+produce_csv(emails, "emails.csv")
