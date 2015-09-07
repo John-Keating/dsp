@@ -43,6 +43,7 @@ Associate Professor         |12
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
+```
 bellamys@mail.med.upenn.edu
 warren@upenn.edu
 bryanma@upenn.edu
@@ -80,14 +81,15 @@ rxiao@mail.med.upenn.edu
 sxie@mail.med.upenn.edu
 dxie@upenn.edu
 weiyang@mail.med.upenn.edu
-
+```
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
+```
 email.chop.edu
 upenn.edu
 cceb.med.upenn.edu
 mail.med.upenn.edu
-
+```
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
 ---
