@@ -127,7 +127,9 @@ faculty_dict = { 'Ellenberg': [\
 Print the first 3 key and value pairs of the dictionary:
 
 ```python
-[('Putt', [[' PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']]), ('Feng', [[' Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']]), ('Bilker', [['Ph.D.', 'Professor', 'warren@upenn.edu']])]
+[('Putt', [[' PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']]), 
+('Feng', [[' Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']]), 
+('Bilker', [['Ph.D.', 'Professor', 'warren@upenn.edu']])]
 ```
 
 
@@ -144,7 +146,9 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 Print the first 3 key and value pairs of the dictionary:
 
 ```python
-[(('Yimei', 'Li'), [[' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']]), (('Hongzhe', 'Li'), [[' Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu']]), (('Knashawn', 'Morales'), [[' Sc.D.', 'Associate Professor of Biostatistics', 'knashawn@mail.med.upenn.edu']])]
+[(('Yimei', 'Li'), [[' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']]), 
+(('Hongzhe', 'Li'), [[' Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu']]), 
+(('Knashawn', 'Morales'), [[' Sc.D.', 'Associate Professor of Biostatistics', 'knashawn@mail.med.upenn.edu']])]
 ```
 
 
