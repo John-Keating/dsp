@@ -19,10 +19,10 @@ Use regular expressions to:
 There are 9 different degrees.
 
 degree  |frequency
--------------------
-PhD         |31
-ScD         |6
-MPH         |2
+--------|--------
+PhD|31
+ScD|6
+MPH|2
 MS          |2
 MD          |1
 MA          |1
@@ -36,7 +36,7 @@ JD          |1
 There are three different titles.
 
 title  |frequency
------------------
+-------|----------
 Professor         |13
 Assistant Professor       |12
 Associate Professor         |12
