@@ -69,6 +69,14 @@ How do frequentist and Bayesian statistics compare?
 
 [<img src='http://imgs.xkcd.com/comics/frequentists_vs_bayesians.png'/>]
 
+Frequentist statistics relies on repeatable random samples. The parameters, the
+probability of an event, are fixed. A hypothesis is valid or invalid(0 or 1). Experimental sciences are a good example of
+this.
+
+Bayesian statistics allows the statistician to update the parameters are
+themselves treated probabilistically. The hypotheses are assigned a probability
+between 0 and 1.
+
 ---
 
 ###Optional Exercises
