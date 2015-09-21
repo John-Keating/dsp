@@ -67,7 +67,7 @@ How do frequentist and Bayesian statistics compare?
 
 ## Relevant XKCD
 
-[<img src='http://imgs.xkcd.com/comics/frequentists_vs_bayesians.png']
+[<img src='http://imgs.xkcd.com/comics/frequentists_vs_bayesians.png'/>]
 
 ---
 
